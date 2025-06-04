@@ -2,6 +2,11 @@
 
 Transform your OpenAPI specifications into human-friendly documentation using AI.
 
+## Introduction
+API Whisper transforms any API schema into clear, human-readable documentation and interactive visualizations using AI. Simply upload 
+your API specification file or paste the JSON content to instantly generate comprehensive documentation, metrics dashboards, and get help 
+from an AI assistant.
+
 ## Features
 
 - Upload OpenAPI/Swagger schemas via file or direct paste
