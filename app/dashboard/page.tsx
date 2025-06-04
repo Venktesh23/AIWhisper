@@ -243,10 +243,9 @@ export default function DashboardPage() {
               
               <TabsContent value="documentation">
                 <div className="premium-box-gradient rounded-xl p-8">
-                  <SchemaSummary 
-                    schemaId={activeSchemaId} 
-                    schemaContent={activeSchemaContent} 
-                  />
+                  <SchemaSummary
+                    schemaContent={activeSchemaContent}
+                  />  
                 </div>
               </TabsContent>
               
