@@ -3,7 +3,9 @@
 Transform your OpenAPI specifications into human-friendly documentation using AI.
 
 ## Introduction
-AskQLAI is a natural‐language‐powered database query interface built with Next.js and React (Bolt) that lets users ask questions in plain English or SQL, instantly generating ER diagrams, executing queries via Supabase, and saving personalized chat histories. It streamlines data exploration by combining AI‐driven NLP, robust authentication, and a clean React UI into a seamless developer experience.
+API Whisper transforms any API schema into clear, human-readable documentation and interactive visualizations using AI. Simply upload 
+your API specification file or paste the JSON content to instantly generate comprehensive documentation, metrics dashboards, and get help 
+from an AI assistant.
 
 ## Features
 
@@ -21,7 +23,6 @@ AskQLAI is a natural‐language‐powered database query interface built with Ne
 - Supabase (Authentication & Database)
 - OpenAI API (Documentation Generation)
 - Tailwind CSS (Styling)
-- Framer Motion (Animations)
 
 ## Setup Instructions
 
