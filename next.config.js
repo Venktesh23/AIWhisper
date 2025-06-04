@@ -6,7 +6,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: { unoptimized: true },
-  webpack: (config, { dev }) => {
+  webpack: (config, { dev, isServer }) => {
     // Optimize watch options for development
     if (dev) {
       config.watchOptions = {
@@ -19,16 +19,35 @@ const nextConfig = {
       config.cache = false;
     }
     
+    // Handle Node.js modules that don't work in the browser
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        net: false,
+        dns: false,
+        child_process: false,
+        tls: false,
+        encoding: false,
+        bufferutil: false,
+        'utf-8-validate': false,
+      };
+      
+      // Externalize problematic modules
+      config.externals = config.externals || [];
+      config.externals.push({
+        'ws': 'commonjs ws',
+        'bufferutil': 'commonjs bufferutil',
+        'utf-8-validate': 'commonjs utf-8-validate',
+      });
+    }
+    
     return config;
   },
   experimental: {
     isrMemoryCacheSize: 0,
     serverActions: true
-  },
-  // Add proper error handling for API routes
-  onError: (err) => {
-    console.error('Next.js runtime error:', err);
-  },
+  }
 };
 
 module.exports = nextConfig;
