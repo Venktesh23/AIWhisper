@@ -18,7 +18,6 @@ Transform your OpenAPI specifications into human-friendly documentation using AI
 - Supabase (Authentication & Database)
 - OpenAI API (Documentation Generation)
 - Tailwind CSS (Styling)
-- Framer Motion (Animations)
 
 ## Setup Instructions
 
