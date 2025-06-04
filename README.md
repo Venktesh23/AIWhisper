@@ -2,6 +2,9 @@
 
 Transform your OpenAPI specifications into human-friendly documentation using AI.
 
+## Introduction
+AskQLAI is a natural‐language‐powered database query interface built with Next.js and React (Bolt) that lets users ask questions in plain English or SQL, instantly generating ER diagrams, executing queries via Supabase, and saving personalized chat histories. It streamlines data exploration by combining AI‐driven NLP, robust authentication, and a clean React UI into a seamless developer experience.
+
 ## Features
 
 - Upload OpenAPI/Swagger schemas via file or direct paste
